@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ImageComponent } from './image/image.component';
+import { StructuredirectiveComponent } from './structuredirective/structuredirective.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ImageComponent
+    ImageComponent,
+    StructuredirectiveComponent
   ],
   imports: [
     BrowserModule,

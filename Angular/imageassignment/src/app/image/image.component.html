@@ -1,7 +1,36 @@
+<div class="row">
+    <br>
+    <div class="col-md-2">
+
+    </div>
+
+    <div class="col-md-4">
+        <br>
+        <input type="number" [(ngModel)]="height" class="form-control">
+    </div>
+    <div class="col-md-4">
+        <br>
+        <input type="number" [(ngModel)]="width" class="form-control">
+    </div>
+    <div class="col-md-2">
+
+    </div>
+
+</div>
 <br>
 
-<input type="number" [(ngModel)]="height">
-<button (mouseenter)="setproperty()" (mouseleave)="leave()"> <img [src] = "imgsource" [style.height.px]= 'height' [style.width.px] ='width' /></button>
-<input type="number" [(ngModel)]="width">
+<div class="row">
+    <div class="col-md-4">
 
-<br>
+    </div>
+
+    <div class="col-md-4" style="text-align: center;">
+        <button (mouseenter)="setproperty()" (mouseleave)="leave()"> <img [src] = "imgsource" [style.height.px]= 'height' [style.width.px] ='width' /></button>
+    </div>
+
+    <div class="col-md-4">
+
+    </div>
+</div>
+
+

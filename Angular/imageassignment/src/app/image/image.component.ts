@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImageComponent implements OnInit {
 
-  height = 100;
-  width = 100;
+  height = 300;
+  width = 300;
   imgsource= "../assets/front.jpg";
 
   leave():void{

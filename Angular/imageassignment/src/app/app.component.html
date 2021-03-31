@@ -1,1 +1,20 @@
-<app-image></app-image>
+<div class="container"  >
+<h1 style="text-align: center;">{{title}}</h1>
+<br>
+<div class="row justify-content-center" >
+    <div class="col-md-3">
+
+        <button (click) = 'showdbdemo()' class="btn btn-danger" >Data Binding Demo</button>
+    </div>
+    
+     <div class="col-md-3 "><button (click) = 'showdirectivedemo()' class="btn btn-danger" >Structural directive Demo</button></div>
+    
+    <br>
+</div>
+
+<div>
+    <app-image *ngIf="showDataBindingDemo"></app-image>
+    <app-structuredirective *ngIf="showDirectiveDemo"></app-structuredirective>
+
+</div>
+</div>
