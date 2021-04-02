@@ -9,6 +9,7 @@ import { PurchaseComponent } from './purchase/purchase.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PurchaseOrderComponent } from './purchase-order/purchase-order.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatExpansionModule
+    MatExpansionModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

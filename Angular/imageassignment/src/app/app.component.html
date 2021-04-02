@@ -1,4 +1,17 @@
-<div class="container">
+<div class="d-flex justify-content-around"> 
+    <div>
+        <button  routerLink="/data-binding"  (click)='showdbdemo()' class="btn btn-danger">Data Binding Demo</button>
+    </div>
+    <div>
+        <button routerLink="/structural-directive" (click)='showdirectivedemo()' class="btn btn-danger">Structural Directive Demo</button>
+    </div>
+    <div>
+        <button routerLink="/purchase" class="btn btn-danger" (click)='showpurchasedemo()'>Master Detail Demo</button>
+    </div>
+</div>
+<router-outlet></router-outlet>
+
+<!-- <div class="container">
 
     <h1 style="text-align: center;">{{title}}</h1>
     <br>
@@ -17,10 +30,4 @@
         </div>
         
     </div>
-
-    <div>
-        <app-image *ngIf="showDataBindingDemo"></app-image>
-        <app-structuredirective *ngIf="showDirectiveDemo"></app-structuredirective>
-        <app-purchase *ngIf="showPurchaseDemo"></app-purchase>
-    </div>
-</div>
+</div> -->
