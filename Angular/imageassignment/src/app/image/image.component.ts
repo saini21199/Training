@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { DataserviceService } from '../dataservice.service';
-import { MyerrorhandlerService } from '../myerrorhandler.service';
 
 @Component({
   selector: 'app-image',
@@ -23,13 +21,11 @@ export class ImageComponent implements OnInit {
     this.imgsource = "../assets/back.jpg"
   }
 
-  constructor(private handleerror:MyerrorhandlerService) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
 
-  generateError(): void {
-    this.handleerror.handleError('I will handle all my error other than api errors');
-  }
+  
 
 }

@@ -1,26 +1,47 @@
-import { NgModule } from '@angular/core';
+import { Component, ErrorHandler, NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AppComponent } from './app.component';
+import { Child1Component } from './child1/child1.component';
+import { CustomAttributeDirectiveComponent } from './custom-attribute-directive/custom-attribute-directive.component';
+import { ErrorHandlerComponent } from './error-handler/error-handler.component';
+import { HomeComponent } from './home/home.component';
 import { ImageComponent } from './image/image.component';
 import { PurchaseComponent } from './purchase/purchase.component';
 import { StructuredirectiveComponent } from './structuredirective/structuredirective.component';
 
 const routes: Routes = [
-    // {
-    //      path: '',
-    //      component: AppComponent
-    //  },
-    {
+  {
+    path : '',
+    redirectTo :'home',
+    pathMatch : 'full'
+  },
+  {
+    path: 'home',
+    component : HomeComponent
+  },
+  
+  {
+    path: 'custom-attribute-directive',
+    component: CustomAttributeDirectiveComponent
+  },
+  {
     path: 'data-binding',
-    component : ImageComponent
+    component: ImageComponent
   },
   {
-    path: 'structural-directive',
-    component : StructuredirectiveComponent
+    path: 'product',
+    component: StructuredirectiveComponent
   },
   {
-    path: 'purchase',
-    component : PurchaseComponent
+    path: 'master-detail',
+    component: PurchaseComponent
+  },
+  {
+    path: 'send-data',
+    component: Child1Component
+  },
+  {
+    path: 'error-handler',
+    component : ErrorHandlerComponent
   }
 ];
 
